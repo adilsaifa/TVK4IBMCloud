@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+ name: mypv
+ labels:
+   region: us-south
+   zone: dal5
+spec:
+ capacity:
+   storage: 50Gi
+ accessModes:
+   - ReadWriteMany
+ nfs:
+   server: nfsdal0501d-fz.service.softlayer.com
+   path: nfsdal0501d-fz.service.softlayer.com:/IBM01SEV2020952_1

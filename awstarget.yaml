@@ -1,0 +1,14 @@
+apiVersion: triliovault.trilio.io/v1
+kind: Target
+metadata:
+  name: annetterh
+spec:
+  type: ObjectStore
+  vendor: AWS
+  objectStoreCredentials:
+    accessKey: AKIA6K7A654Q245S2JPJ
+    bucketName: annetterh
+    region: us-west-1
+    secretKey: /629zAd+MAhrWaXPOH37UJ1HBkR0PDI5icfeb/eP
+    url: https://s3.amazonaws.com
+  thresholdCapacity: 100Gi

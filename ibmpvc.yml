@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+ name: silver-pvc
+ labels:
+   region: us-south
+   zone: dal5
+spec:
+ accessModes:
+   - ReadWriteMany
+ resources:
+   requests:
+     storage: 24Gi
+ storageClassName: ibmc-file-silver
